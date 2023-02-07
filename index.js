@@ -7,12 +7,14 @@ app.use(cors());
 
 const server = http.createServer(app);
 
+
 const io = new Server(server, {
     cors:{
-        origin: "http://localhost:3000",
+        origin: "https://roulind-chatapp.onrender.com:3000",
         methods: ["GET", "POST"],
     }
 })
+
 
 
 // We are listening an event with the id "connection"
